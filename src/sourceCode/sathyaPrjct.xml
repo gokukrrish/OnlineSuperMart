@@ -1,0 +1,19 @@
+<?xml version ="1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name ="SathyaElectronics" verbose  = "1">
+	<test name = "Test1">
+	<parameter name="baseURL" value="https://www.sathya.in/"/>
+		<classes>
+			<class name = "sourceCode.FourModulesExcel"/>
+		</classes>
+	</test>
+	<listeners>
+			<listener class-name="utilities.Listener"></listener>
+    </listeners>
+	<test name = "Test2">
+	<parameter name="baseURL" value="https://www.sathya.in/"/>
+		<classes>
+			<class name = "sourceCode.ACModulePayment"/> 
+		</classes>
+	</test>
+</suite>
